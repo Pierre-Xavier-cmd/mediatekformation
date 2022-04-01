@@ -1,0 +1,32 @@
+{% block body %}
+    
+    {{ form_start(formformation) }}
+        <div class="row mt-3">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        {{ form_row (formformation.publishedAt) }}
+                        {{ form_row (formformation.title) }}
+                        {{ form_row (formformation.description) }}
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                {{ form_row (formformation.miniature) }}
+                            </div>
+                            <div class="col">
+                                {{ form_row (formformation.picture) }}
+                            </div>
+                            <div class="col">
+                                {{ form_row (formformation.videoId) }}
+                            </div>
+                            <div class="col">
+                                {{ form_row (formformation.niveau) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ form_end(formformation) }}
+{% endblock %}
